@@ -10,9 +10,9 @@
 #     w += dict[letter]
 # print(w)
 # dict = {
-    # 'а': 1,
-    # 'б': 2,
-    # 'д': 3
+#     'а': 1,
+#     'б': 2,
+#     'д': 3
 # }
 # word = ('аддаб')
 # w = 0
@@ -42,38 +42,26 @@
 #         weight -= idx
 #         result.append(thing)
 # print(result)
-# workers = {
-#     'name1': 'wowowo@gmail.com',
-#     'name2': 'xoxoxo@gmail.com',
-#     'name3': 'dododo@gmail.com',
-# }
-# while True:
-#     name = input('введите ваше имя: ')
-#     if name in workers:
-#         print(f'вот ваша почта {workers.get(name)}! Добро пожаловать')
-#     else:
-#         d = input('Добро пожаловать в коллектив! Введите свою почту: ')
-#         workers.update({ name: d})
-workers = {
-    1: ['name1','wowowo@gmail.com'],
-    2: ['name2','xoxoxo@gmail.com' ],
-    3: ['name3','dododo@gmail.com'],
-}
-while True:
-    email = ()
-    name = input('введите ваше имя: ')
-    for i in workers:
-        d = workers.get(i)[0]
-        if name == d:
-            print(f'Добро пожаловать! Ваша почта {workers.get(i)[1]}')
-        else:
-            email = input(f'Добро пожаловать в коллетктив {name}! Введите вашу почту: ')
-        workers.update({name: email})
-
-
-
-
-
-
+# numbers = input().split()
+# number = {}
+# e = []
+# for i in numbers:
+#     if i not in e:
+#         d = numbers.count(i)
+#         number.update({i: d})
+#         e.append(i)
+# print(number)
+emails = {'mgu.edu': ['andrei_serov', 'alexander_pushkin', 'elena_belova', 'kirill_stepanov'],
+      	'gmail.com': ['alena.semyonova', 'ivan.polekhin', 'marina_abrabova'],
+      	'msu.edu': ['sergei.zharkov', 'julia_lyubimova', 'vitaliy.smirnoff'],
+      	'yandex.ru': ['ekaterina_ivanova', 'glebova_nastya'],
+      	'harvard.edu': ['john.doe', 'mark.zuckerberg', 'helen_hunt'],
+      	'mail.ru': ['roman.kolosov', 'ilya_gromov', 'masha.yashkina']}
+d=[]
+for i in emails:
+    for values in emails.values():
+        for numbers in range(len(values)):
+            d.append(f'{values[numbers]}@{i}')
+print(d)
 
 
