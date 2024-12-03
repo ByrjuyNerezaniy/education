@@ -28,4 +28,7 @@ while True:
     if h[0][3:] == str(datetime.datetime.now().date()):
         toaster = win10toast.ToastNotifier()
         toaster.show_toast(name, text)
+    # if 
+    #     today = win10toast.ToastNotifier()
+    #     today.show_toast()
     
