@@ -46,7 +46,7 @@ def clear():
 def allarm_time():
     date_time = input('введите дату и время: ')
     file = open('diary.txt', 'a', encoding='utf-8')
-    file.write(f'/rem : {date_time}')
+    file.write(f'/a : {date_time} : \n')
     file.close()
 #команды_______________________________________________________________________
 def commands():
@@ -56,8 +56,8 @@ def commands():
         case '/r': read()
         case '/c': clear()
         case '/d': delite()
-        case '/a': allarm_time
+        case '/a': allarm_time()
         case _: print('команда не действительна')
 if __name__ == '__main__':
     main()
-    diary_read_file.dairy_read_file_cycle()
+    # diary_read_file.allarm_main()
