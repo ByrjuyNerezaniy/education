@@ -3,7 +3,7 @@ import os
 import diary_read_file
 print('Здравствуте меня зовут Дарагой Днивник. Я ваш помощник чтобы не забыть информацию.')
 text_user = ''
-diary_read_file.dairy_read_file_cycle()
+
 #основанеие_____________________________________________________________________
 def main():
     while True:
@@ -60,3 +60,4 @@ def commands():
         case _: print('команда не действительна')
 if __name__ == '__main__':
     main()
+    diary_read_file.dairy_read_file_cycle()

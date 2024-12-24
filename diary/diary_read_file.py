@@ -1,12 +1,12 @@
 import datetime
 import winsound
 def allarm(): 
-    for i in range(2500):
+    for i in range(100, 2500, 100):
         winsound.Beep(i, 100)
         break
 def dairy_read_file_cycle():    
     while True:
-        file = open('diary.txt', 'a', encoding='utf-8')
+        file = open('diary.txt', 'r', encoding='utf-8')
         reading = file.readline()
         if '/a' in reading:
             allarm_time = reading.split(' : ')
